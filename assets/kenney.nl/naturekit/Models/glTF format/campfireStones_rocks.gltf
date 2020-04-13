@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC3",
+      "max": [
+        0.92167335748672485,
+        0.26500001549720764,
+        0.8785056471824646
+      ],
+      "min": [
+        -0.92167335748672485,
+        0.0,
+        -0.8785056471824646
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC3",
+      "max": [
+        0.88588136434555054,
+        1.0,
+        0.87981569766998291
+      ],
+      "min": [
+        -0.87981569766998291,
+        -1.0,
+        -0.88588136434555054
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.076320961117744446,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.06594502180814743,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC2",
+      "max": [
+        36.286354064941406,
+        35.586837768554688
+      ],
+      "min": [
+        -36.286354064941406,
+        -33.586837768554688
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 792,
+      "type": "SCALAR",
+      "max": [
+        395.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "campfireStones_rocks.bin",
+      "byteLength": 20592
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4752
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4752,
+      "byteLength": 4752
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9504,
+      "byteLength": 6336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15840,
+      "byteLength": 3168
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19008,
+      "byteLength": 1584
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "campfireStones_rocks"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.2934,
+        0.2934,
+        0.2934
+      ],
+      "translation": [
+        7.71245337,
+        0.0,
+        7.716489
+      ],
+      "name": "campfireStones_rocks"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "campfireStones_rocks"
+    }
+  ]
+}

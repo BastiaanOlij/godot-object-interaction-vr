@@ -1,0 +1,245 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 199,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        0.25,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 199,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 199,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 199,
+      "type": "VEC2",
+      "max": [
+        39.370079040527344,
+        1.0
+      ],
+      "min": [
+        -47.584831237792969,
+        -38.370079040527344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 336,
+      "type": "SCALAR",
+      "max": [
+        169.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 75,
+      "type": "SCALAR",
+      "max": [
+        196.0
+      ],
+      "min": [
+        170.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5121,
+      "count": 75,
+      "type": "SCALAR",
+      "max": [
+        198.0
+      ],
+      "min": [
+        111.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "ground_dirtRiverSide.bin",
+      "byteLength": 10038
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2388
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2388,
+      "byteLength": 2388
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4776,
+      "byteLength": 3184
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7960,
+      "byteLength": 1592
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9552,
+      "byteLength": 336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9888,
+      "byteLength": 75
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9963,
+      "byteLength": 75
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6911765,
+          0.957887769,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.18000000715255737,
+        "roughnessFactor": 0.59900000691413879
+      },
+      "name": "natureKit-water"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "ground_dirtRiverSide"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        2.19999981,
+        9.023893E-16,
+        -1.2
+      ],
+      "name": "ground_dirtRiverSide"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "ground_dirtRiverSide"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        0.34193280339241028,
+        0.62999999523162842,
+        0.39482998847961426
+      ],
+      "min": [
+        -0.34193280339241028,
+        0.0,
+        -0.39482998847961426
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        0.9874764084815979,
+        1.0,
+        0.99036937952041626
+      ],
+      "min": [
+        -0.9874764084815979,
+        -1.0,
+        -0.99036937952041626
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC2",
+      "max": [
+        9.30806827545166,
+        11.748031616210938
+      ],
+      "min": [
+        -9.30806827545166,
+        -23.768289566040039
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 168,
+      "type": "SCALAR",
+      "max": [
+        105.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 60,
+      "type": "SCALAR",
+      "max": [
+        129.0
+      ],
+      "min": [
+        42.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5121,
+      "count": 18,
+      "type": "SCALAR",
+      "max": [
+        147.0
+      ],
+      "min": [
+        130.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "pumpkin.bin",
+      "byteLength": 7350
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1776,
+      "byteLength": 1776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3552,
+      "byteLength": 2368
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5920,
+      "byteLength": 1184
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7104,
+      "byteLength": 168
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7272,
+      "byteLength": 60
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7332,
+      "byteLength": 18
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9490196,
+          0.5529412,
+          0.145098045,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesFall"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "pumpkin"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.43,
+        0.43,
+        0.43
+      ],
+      "translation": [
+        5.3,
+        0.0,
+        5.302755
+      ],
+      "name": "pumpkin"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "pumpkin"
+    }
+  ]
+}

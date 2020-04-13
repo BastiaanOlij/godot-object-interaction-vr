@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/kenney.nl/furnaturekit/Models/GLTF format/tableCoffeeGlass.glb" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.671206, 0.238217, 0.411998 )
+
+[node name="tableCoffeeGlass" type="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.58964, 0, 0.0606325 )
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.225009, 0 )
+shape = SubResource( 1 )
+
+[node name="tableCoffeeGlass" parent="." instance=ExtResource( 1 )]
+transform = Transform( -2, 0, -6.51683e-07, 0, 2, 0, 6.51683e-07, 0, -2, -0.262257, 0, -0.197235 )
+
+[editable path="tableCoffeeGlass"]

@@ -1,0 +1,243 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC3",
+      "max": [
+        0.77254581451416016,
+        6.1184239387512207,
+        0.78390002250671387
+      ],
+      "min": [
+        -0.77254581451416016,
+        0.0,
+        -0.78390002250671387
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC3",
+      "max": [
+        0.99939537048339844,
+        1.0,
+        0.99939537048339844
+      ],
+      "min": [
+        -0.99939537048339844,
+        -1.0,
+        -0.99939537048339844
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC2",
+      "max": [
+        30.415189743041992,
+        31.862205505371094
+      ],
+      "min": [
+        -30.415189743041992,
+        -236.9217529296875
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 45,
+      "type": "SCALAR",
+      "max": [
+        26.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 447,
+      "type": "SCALAR",
+      "max": [
+        242.0
+      ],
+      "min": [
+        8.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5121,
+      "count": 18,
+      "type": "SCALAR",
+      "max": [
+        250.0
+      ],
+      "min": [
+        243.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "tree_pine_shortSquare.bin",
+      "byteLength": 12558
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3012
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3012,
+      "byteLength": 3012
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6024,
+      "byteLength": 4016
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10040,
+      "byteLength": 2008
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12048,
+      "byteLength": 45
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12093,
+      "byteLength": 447
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12540,
+      "byteLength": 18
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3372549,
+          0.627451,
+          0.698039234,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leaves"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "tree_pine_shortSquare"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "translation": [
+        4.113957,
+        0.0,
+        -4.297939
+      ],
+      "name": "tree_pine_shortSquare"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "tree_pine_shortSquare"
+    }
+  ]
+}

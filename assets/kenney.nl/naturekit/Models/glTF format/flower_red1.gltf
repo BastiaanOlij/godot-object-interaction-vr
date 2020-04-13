@@ -1,0 +1,205 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 132,
+      "type": "VEC3",
+      "max": [
+        0.10378447920084,
+        0.2800000011920929,
+        0.10378447920084
+      ],
+      "min": [
+        -0.10378447920084,
+        0.0,
+        -0.10378447920084
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 132,
+      "type": "VEC3",
+      "max": [
+        0.99882048368453979,
+        1.0,
+        0.99882048368453979
+      ],
+      "min": [
+        -0.99882048368453979,
+        -1.0,
+        -0.99882048368453979
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 132,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 132,
+      "type": "VEC2",
+      "max": [
+        1.8188976049423218,
+        2.8188977241516113
+      ],
+      "min": [
+        -1.8188976049423218,
+        -10.170206069946289
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 78,
+      "type": "SCALAR",
+      "max": [
+        51.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 114,
+      "type": "SCALAR",
+      "max": [
+        131.0
+      ],
+      "min": [
+        52.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "flower_red1.bin",
+      "byteLength": 6528
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1584
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1584,
+      "byteLength": 1584
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3168,
+      "byteLength": 2112
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5280,
+      "byteLength": 1056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6336,
+      "byteLength": 78
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6414,
+      "byteLength": 114
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8784314,
+          0.2901961,
+          0.3137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-mushroom"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "flower_red1"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        0.5,
+        0.0,
+        2.89999986
+      ],
+      "name": "flower_red1"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "flower_red1"
+    }
+  ]
+}

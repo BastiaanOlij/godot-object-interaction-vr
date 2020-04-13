@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/kenney.nl/furnaturekit/Models/GLTF format/bedBunk.glb" type="PackedScene" id=1]
+[ext_resource path="res://assets/cc0textures.com/Wood038/Wood038.tres" type="Material" id=2]
+[ext_resource path="res://Models/Kenney.nl/carpetWhite.tres" type="Material" id=3]
+[ext_resource path="res://assets/cc0textures.com/Fabric016/Fabric016.tres" type="Material" id=4]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.56144, 0.15312, 1.10101 )
+
+[node name="bedBunk" type="StaticBody"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape01" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.311101, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape02" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39023, 0 )
+shape = SubResource( 1 )
+
+[node name="bedBunk" parent="." instance=ExtResource( 1 )]
+transform = Transform( -2, 0, -6.51683e-07, 0, 2, 0, 6.51683e-07, 0, -2, 0.570724, 0, -1.09287 )
+
+[node name="bedBunkClone" parent="bedBunk" index="0"]
+material/0 = ExtResource( 2 )
+material/1 = ExtResource( 3 )
+
+[node name="coverBottom" parent="bedBunk/bedBunkClone" index="0"]
+material/0 = ExtResource( 4 )
+
+[node name="coverTop" parent="bedBunk/bedBunkClone" index="1"]
+material/0 = ExtResource( 4 )
+
+[editable path="bedBunk"]

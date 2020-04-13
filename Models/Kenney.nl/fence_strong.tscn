@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/kenney.nl/naturekit/Models/glTF format/fence_strong.gltf" type="PackedScene" id=1]
+
+[node name="fence_strong" instance=ExtResource( 1 )]
+
+[node name="fence_strong 2" parent="." index="0"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -0.00158846, 0, -0.0042825 )

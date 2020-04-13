@@ -1,0 +1,166 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 56,
+      "type": "VEC3",
+      "max": [
+        0.11205058544874191,
+        0.63897603750228882,
+        0.11205058544874191
+      ],
+      "min": [
+        -0.11205058544874191,
+        0.0,
+        -0.11205058544874191
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 56,
+      "type": "VEC3",
+      "max": [
+        0.99863141775131226,
+        1.0,
+        0.99863141775131226
+      ],
+      "min": [
+        -0.99863141775131226,
+        -1.0,
+        -0.99863141775131226
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 56,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 56,
+      "type": "VEC2",
+      "max": [
+        4.411440372467041,
+        5.411440372467041
+      ],
+      "min": [
+        -4.411440372467041,
+        -21.656312942504883
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 90,
+      "type": "SCALAR",
+      "max": [
+        55.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "stone_obelisk.bin",
+      "byteLength": 2778
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 672
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 672,
+      "byteLength": 672
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1344,
+      "byteLength": 896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2240,
+      "byteLength": 448
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2688,
+      "byteLength": 90
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "stone_obelisk"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        6.5,
+        -8.014827E-32,
+        4.1
+      ],
+      "name": "stone_obelisk"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "stone_obelisk"
+    }
+  ]
+}

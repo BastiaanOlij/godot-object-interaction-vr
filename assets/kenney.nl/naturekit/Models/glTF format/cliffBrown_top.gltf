@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        2.2000000476837158,
+        1.1399999856948853
+      ],
+      "min": [
+        -3.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.96061909198760986
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC2",
+      "max": [
+        118.11023712158203,
+        11.115795135498047
+      ],
+      "min": [
+        -125.30056762695313,
+        -86.1759262084961
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 75,
+      "type": "SCALAR",
+      "max": [
+        44.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 84,
+      "type": "SCALAR",
+      "max": [
+        86.0
+      ],
+      "min": [
+        45.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cliffBrown_top.bin",
+      "byteLength": 4335
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1044
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1044,
+      "byteLength": 1044
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2088,
+      "byteLength": 1392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3480,
+      "byteLength": 696
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4176,
+      "byteLength": 75
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4251,
+      "byteLength": 84
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "cliffBrown_top"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.333333343,
+        0.454545468,
+        0.4021248
+      ],
+      "translation": [
+        -5.0,
+        0.0,
+        -1.2
+      ],
+      "name": "cliffBrown_top"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cliffBrown_top"
+    }
+  ]
+}

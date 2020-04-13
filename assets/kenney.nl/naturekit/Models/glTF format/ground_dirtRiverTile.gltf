@@ -1,0 +1,245 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 507,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        0.25,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 507,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 507,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.087592177093029022,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.0881776213645935,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 507,
+      "type": "VEC2",
+      "max": [
+        39.370079040527344,
+        9.3311471939086914
+      ],
+      "min": [
+        -39.370079040527344,
+        -38.370079040527344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 858,
+      "type": "SCALAR",
+      "max": [
+        433.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 219,
+      "type": "SCALAR",
+      "max": [
+        437.0
+      ],
+      "min": [
+        20.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 201,
+      "type": "SCALAR",
+      "max": [
+        506.0
+      ],
+      "min": [
+        438.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "ground_dirtRiverTile.bin",
+      "byteLength": 26892
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6084
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6084,
+      "byteLength": 6084
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12168,
+      "byteLength": 8112
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20280,
+      "byteLength": 4056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 24336,
+      "byteLength": 1716
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26052,
+      "byteLength": 438
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26490,
+      "byteLength": 402
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6911765,
+          0.957887769,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.18000000715255737,
+        "roughnessFactor": 0.59900000691413879
+      },
+      "name": "natureKit-water"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "ground_dirtRiverTile"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        3.39999986,
+        0.0,
+        -2.4
+      ],
+      "name": "ground_dirtRiverTile"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "ground_dirtRiverTile"
+    }
+  ]
+}

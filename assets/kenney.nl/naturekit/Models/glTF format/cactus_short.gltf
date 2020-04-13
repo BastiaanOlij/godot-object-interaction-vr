@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 174,
+      "type": "VEC3",
+      "max": [
+        0.357535183429718,
+        1.5399999618530273,
+        0.37820509076118469
+      ],
+      "min": [
+        -0.357535183429718,
+        0.0,
+        -0.37820509076118469
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 174,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 174,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 174,
+      "type": "VEC2",
+      "max": [
+        17.716974258422852,
+        15.88996410369873
+      ],
+      "min": [
+        -17.716974258422852,
+        -56.874015808105469
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 324,
+      "type": "SCALAR",
+      "max": [
+        173.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cactus_short.bin",
+      "byteLength": 8676
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2088
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2088,
+      "byteLength": 2088
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4176,
+      "byteLength": 2784
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6960,
+      "byteLength": 1392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8352,
+      "byteLength": 324
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "cactus_short"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.31,
+        0.31,
+        0.31
+      ],
+      "translation": [
+        0.4794624,
+        3.749428E-16,
+        8.908611
+      ],
+      "name": "cactus_short"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cactus_short"
+    }
+  ]
+}

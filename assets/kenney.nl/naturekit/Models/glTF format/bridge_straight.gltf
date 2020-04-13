@@ -1,0 +1,205 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 430,
+      "type": "VEC3",
+      "max": [
+        0.47475197911262512,
+        0.16763000190258026,
+        0.25307914614677429
+      ],
+      "min": [
+        -0.47475197911262512,
+        0.0,
+        -0.25307914614677429
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 430,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 430,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.152780219912529,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.152780219912529,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 430,
+      "type": "VEC2",
+      "max": [
+        18.691022872924805,
+        14.426133155822754
+      ],
+      "min": [
+        -18.691022872924805,
+        -8.9637460708618164
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 576,
+      "type": "SCALAR",
+      "max": [
+        325.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 240,
+      "type": "SCALAR",
+      "max": [
+        429.0
+      ],
+      "min": [
+        126.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "bridge_straight.bin",
+      "byteLength": 22272
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 5160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5160,
+      "byteLength": 5160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10320,
+      "byteLength": 6880
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17200,
+      "byteLength": 3440
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20640,
+      "byteLength": 1152
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21792,
+      "byteLength": 480
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "bridge_straight"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        -0.6999998,
+        -7.54521554E-13,
+        7.70000029
+      ],
+      "name": "bridge_straight"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "bridge_straight"
+    }
+  ]
+}

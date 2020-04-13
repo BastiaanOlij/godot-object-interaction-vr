@@ -1,0 +1,204 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 332,
+      "type": "VEC3",
+      "max": [
+        0.43209275603294373,
+        1.4405544996261597,
+        0.34220585227012634
+      ],
+      "min": [
+        -0.43209275603294373,
+        0.0,
+        -0.34220585227012634
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 332,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 332,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.024405105039477348,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 332,
+      "type": "VEC2",
+      "max": [
+        17.011526107788086,
+        12.110466957092285
+      ],
+      "min": [
+        -17.011526107788086,
+        -55.714744567871094
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 570,
+      "type": "SCALAR",
+      "max": [
+        313.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 18,
+      "type": "SCALAR",
+      "max": [
+        331.0
+      ],
+      "min": [
+        314.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "stone_statue.bin",
+      "byteLength": 17112
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3984
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3984,
+      "byteLength": 3984
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7968,
+      "byteLength": 5312
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13280,
+      "byteLength": 2656
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15936,
+      "byteLength": 1140
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17076,
+      "byteLength": 36
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "stone_statue"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "translation": [
+        6.5,
+        0.0,
+        2.88279271
+      ],
+      "name": "stone_statue"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "stone_statue"
+    }
+  ]
+}

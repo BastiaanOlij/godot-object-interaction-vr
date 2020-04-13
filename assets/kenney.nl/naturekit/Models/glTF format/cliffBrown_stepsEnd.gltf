@@ -1,0 +1,205 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 338,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        1.0,
+        1.0643399953842163
+      ],
+      "min": [
+        -0.48367571830749512,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 338,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 338,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        0.96100515127182007,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99270802736282349,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 338,
+      "type": "VEC2",
+      "max": [
+        43.100639343261719,
+        21.078424453735352
+      ],
+      "min": [
+        -39.370079040527344,
+        -38.370079040527344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 435,
+      "type": "SCALAR",
+      "max": [
+        260.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 135,
+      "type": "SCALAR",
+      "max": [
+        337.0
+      ],
+      "min": [
+        261.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cliffBrown_stepsEnd.bin",
+      "byteLength": 17364
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4056,
+      "byteLength": 4056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8112,
+      "byteLength": 5408
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13520,
+      "byteLength": 2704
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16224,
+      "byteLength": 870
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17094,
+      "byteLength": 270
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "cliffBrown_stepsEnd"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        -12.2,
+        9.24949E-16,
+        -2.4
+      ],
+      "name": "cliffBrown_stepsEnd"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cliffBrown_stepsEnd"
+    }
+  ]
+}

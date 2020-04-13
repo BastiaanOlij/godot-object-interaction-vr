@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3",
+      "max": [
+        0.51753675937652588,
+        0.56024998426437378,
+        0.37255460023880005
+      ],
+      "min": [
+        -0.51753675937652588,
+        0.0,
+        -0.37255460023880005
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3",
+      "max": [
+        0.5917128324508667,
+        0.7379111647605896,
+        0.79102945327758789
+      ],
+      "min": [
+        -0.5917128324508667,
+        -0.7379111647605896,
+        -0.79102945327758789
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC4",
+      "max": [
+        0.93010491132736206,
+        0.0,
+        0.87674421072006226,
+        1.0
+      ],
+      "min": [
+        -0.93010491132736206,
+        0.0,
+        -0.87674421072006226,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC2",
+      "max": [
+        9.7997188568115234,
+        1.0
+      ],
+      "min": [
+        -9.7997188568115234,
+        -24.935070037841797
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 48,
+      "type": "SCALAR",
+      "max": [
+        47.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "plant_bushSmall.bin",
+      "byteLength": 2352
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 576
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 576
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1152,
+      "byteLength": 768
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1920,
+      "byteLength": 384
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2304,
+      "byteLength": 48
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "plant_bushSmall"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.37,
+        0.37,
+        0.4514
+      ],
+      "translation": [
+        4.08587074,
+        0.0,
+        4.126374
+      ],
+      "name": "plant_bushSmall"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "plant_bushSmall"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 84,
+      "type": "VEC3",
+      "max": [
+        0.49657893180847168,
+        0.76999998092651367,
+        0.57339996099472046
+      ],
+      "min": [
+        -0.49657893180847168,
+        0.0,
+        -0.57339996099472046
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 84,
+      "type": "VEC3",
+      "max": [
+        0.98729509115219116,
+        1.0,
+        0.8550226092338562
+      ],
+      "min": [
+        -0.98729509115219116,
+        -1.0,
+        -0.8550226092338562
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 84,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 84,
+      "type": "VEC2",
+      "max": [
+        16.024879455566406,
+        19.503936767578125
+      ],
+      "min": [
+        -16.024879455566406,
+        -18.441989898681641
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 132,
+      "type": "SCALAR",
+      "max": [
+        83.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "stone_small9.bin",
+      "byteLength": 4164
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1008
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1008,
+      "byteLength": 1008
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2016,
+      "byteLength": 1344
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3360,
+      "byteLength": 672
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4032,
+      "byteLength": 132
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "stone_small9"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.3608,
+        0.3608,
+        0.3608
+      ],
+      "translation": [
+        -9.1,
+        0.0,
+        5.3
+      ],
+      "name": "stone_small9"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "stone_small9"
+    }
+  ]
+}

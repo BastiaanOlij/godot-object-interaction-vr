@@ -1,0 +1,204 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 146,
+      "type": "VEC3",
+      "max": [
+        0.21745899319648743,
+        0.50700002908706665,
+        0.25110000371932983
+      ],
+      "min": [
+        -0.21745899319648743,
+        0.0,
+        -0.25110000371932983
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 146,
+      "type": "VEC3",
+      "max": [
+        0.992557168006897,
+        1.0,
+        0.992557168006897
+      ],
+      "min": [
+        -0.992557168006897,
+        -1.0,
+        -0.992557168006897
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 146,
+      "type": "VEC4",
+      "max": [
+        0.86602550745010376,
+        0.98527818918228149,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.98527818918228149,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 146,
+      "type": "VEC2",
+      "max": [
+        4.94291353225708,
+        3.3622047901153564
+      ],
+      "min": [
+        -4.94291353225708,
+        -12.749573707580566
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 96,
+      "type": "SCALAR",
+      "max": [
+        91.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 84,
+      "type": "SCALAR",
+      "max": [
+        145.0
+      ],
+      "min": [
+        92.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "mushroom_red.bin",
+      "byteLength": 7188
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1752
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1752,
+      "byteLength": 1752
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3504,
+      "byteLength": 2336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5840,
+      "byteLength": 1168
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7008,
+      "byteLength": 96
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7104,
+      "byteLength": 84
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8784314,
+          0.2901961,
+          0.3137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-mushroom"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "mushroom_red"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "translation": [
+        0.5704653,
+        0.0,
+        6.46405745
+      ],
+      "name": "mushroom_red"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "mushroom_red"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        0.062013097107410431,
+        0.16654229164123535,
+        0.053704913705587387
+      ],
+      "min": [
+        -0.062013097107410431,
+        0.0,
+        -0.053704913705587387
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        0.99960893392562866,
+        1.0,
+        0.99960893392562866
+      ],
+      "min": [
+        -0.99960893392562866,
+        -1.0,
+        -0.99960893392562866
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC2",
+      "max": [
+        1.8780465126037598,
+        2.6264359951019287
+      ],
+      "min": [
+        -1.8780465126037598,
+        -5.7672319412231445
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 126,
+      "type": "SCALAR",
+      "max": [
+        83.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 114,
+      "type": "SCALAR",
+      "max": [
+        147.0
+      ],
+      "min": [
+        84.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "flower_beige3.bin",
+      "byteLength": 7344
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1776,
+      "byteLength": 1776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3552,
+      "byteLength": 2368
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5920,
+      "byteLength": 1184
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7104,
+      "byteLength": 126
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7230,
+      "byteLength": 114
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.996078432,
+          0.78039217,
+          0.6392157,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-woodLight"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "flower_beige3"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        1.22,
+        1.22,
+        1.22
+      ],
+      "translation": [
+        2.97398353,
+        0.0,
+        5.22601652
+      ],
+      "name": "flower_beige3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "flower_beige3"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/cc0textures.com/Metal012/Metal012.tres" type="Material" id=1]
+[ext_resource path="res://assets/kenney.nl/furnaturekit/Models/GLTF format/desk.glb" type="PackedScene" id=2]
+[ext_resource path="res://assets/cc0textures.com/Wood038/Wood038.tres" type="Material" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.722981, 0.0389197, 0.401238 )
+
+[node name="desk" type="StaticBody"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 3, 0, -1 )
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.731443, 0 )
+shape = SubResource( 1 )
+
+[node name="desk" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2, 0, -6.51683e-07, 0, 2, 0, 6.51683e-07, 0, -2, 0.705611, 0, -0.377525 )
+
+[node name="deskClone" parent="desk" index="0"]
+material/0 = ExtResource( 3 )
+
+[node name="drawer" parent="desk/deskClone" index="0"]
+material/0 = ExtResource( 3 )
+material/1 = ExtResource( 1 )
+
+[editable path="desk"]

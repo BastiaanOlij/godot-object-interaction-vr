@@ -1,0 +1,277 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC3",
+      "max": [
+        0.43746399879455566,
+        0.56113076210021973,
+        0.31819999217987061
+      ],
+      "min": [
+        -0.43746399879455566,
+        0.0,
+        -0.31819999217987061
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 396,
+      "type": "VEC2",
+      "max": [
+        17.222991943359375,
+        12.408819198608398
+      ],
+      "min": [
+        -17.222991943359375,
+        -21.091762542724609
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 528,
+      "type": "SCALAR",
+      "max": [
+        165.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 39,
+      "type": "SCALAR",
+      "max": [
+        166.0
+      ],
+      "min": [
+        68.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 324,
+      "type": "SCALAR",
+      "max": [
+        338.0
+      ],
+      "min": [
+        167.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 60,
+      "type": "SCALAR",
+      "max": [
+        395.0
+      ],
+      "min": [
+        339.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "tent_detailedClosed.bin",
+      "byteLength": 20343
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4752
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4752,
+      "byteLength": 4752
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9504,
+      "byteLength": 6336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15840,
+      "byteLength": 3168
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19008,
+      "byteLength": 528
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19536,
+      "byteLength": 39
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19575,
+      "byteLength": 648
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20223,
+      "byteLength": 120
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8784314,
+          0.2901961,
+          0.3137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-mushroom"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.75686276,
+          0.211764708,
+          0.23137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-mushroomDark"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 7,
+          "material": 3
+        }
+      ],
+      "name": "tent_detailedClosed"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        10.1,
+        -2.65076843E-16,
+        6.5
+      ],
+      "name": "tent_detailedClosed"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "tent_detailedClosed"
+    }
+  ]
+}

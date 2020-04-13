@@ -1,0 +1,166 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        1.0,
+        0.45842224359512329
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.96100515127182007
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC2",
+      "max": [
+        39.370079040527344,
+        9.0372085571289063
+      ],
+      "min": [
+        -42.825706481933594,
+        -38.370079040527344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 192,
+      "type": "SCALAR",
+      "max": [
+        101.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cliffBrown_entrance.bin",
+      "byteLength": 5088
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1224
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1224,
+      "byteLength": 1224
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2448,
+      "byteLength": 1632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4080,
+      "byteLength": 816
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4896,
+      "byteLength": 192
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "cliffBrown_entrance"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        -8.599999,
+        2.46106164E-16,
+        -2.4
+      ],
+      "name": "cliffBrown_entrance"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cliffBrown_entrance"
+    }
+  ]
+}

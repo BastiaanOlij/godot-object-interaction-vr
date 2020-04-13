@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/cc0textures.com/Metal012/Metal012.tres" type="Material" id=1]
+[ext_resource path="res://assets/kenney.nl/furnaturekit/Models/GLTF format/bedDouble.glb" type="PackedScene" id=2]
+[ext_resource path="res://assets/cc0textures.com/Wood038/Wood038.tres" type="Material" id=3]
+[ext_resource path="res://Models/Kenney.nl/carpetWhite.tres" type="Material" id=4]
+[ext_resource path="res://assets/cc0textures.com/Fabric016/Fabric016.tres" type="Material" id=5]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 0.206937, 1.13251 )
+
+[node name="bedDouble" type="StaticBody"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.300999, 0 )
+shape = SubResource( 1 )
+
+[node name="bedDouble" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2, 0, -6.51683e-07, 0, 2, 0, 6.51683e-07, 0, -2, 0.965482, 0, -1.12347 )
+
+[node name="bedDoubleClone" parent="bedDouble" index="0"]
+material/0 = ExtResource( 4 )
+material/1 = ExtResource( 3 )
+material/2 = ExtResource( 1 )
+
+[node name="cover" parent="bedDouble/bedDoubleClone" index="0"]
+material/0 = ExtResource( 5 )
+
+[editable path="bedDouble"]

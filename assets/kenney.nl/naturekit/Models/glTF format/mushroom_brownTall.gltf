@@ -1,0 +1,204 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        0.173967182636261,
+        0.71504491567611694,
+        0.20087999105453491
+      ],
+      "min": [
+        -0.173967182636261,
+        0.0,
+        -0.20087999105453491
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        0.9981580376625061,
+        1.0,
+        0.99839586019515991
+      ],
+      "min": [
+        -0.9980475902557373,
+        -1.0,
+        -0.997786283493042
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.995846688747406,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.996452808380127,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC2",
+      "max": [
+        3.9543306827545166,
+        2.8897638320922852
+      ],
+      "min": [
+        -3.9543306827545166,
+        -19.209043502807617
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 96,
+      "type": "SCALAR",
+      "max": [
+        93.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 84,
+      "type": "SCALAR",
+      "max": [
+        147.0
+      ],
+      "min": [
+        94.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "mushroom_brownTall.bin",
+      "byteLength": 7284
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1776,
+      "byteLength": 1776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3552,
+      "byteLength": 2368
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5920,
+      "byteLength": 1184
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7104,
+      "byteLength": 96
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7200,
+      "byteLength": 84
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "mushroom_brownTall"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.284,
+        0.284,
+        0.284
+      ],
+      "translation": [
+        2.944711,
+        0.0,
+        7.690267
+      ],
+      "name": "mushroom_brownTall"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "mushroom_brownTall"
+    }
+  ]
+}

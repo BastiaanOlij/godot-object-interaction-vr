@@ -1,0 +1,205 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC3",
+      "max": [
+        9.2404660583401271E-14,
+        0.5,
+        0.45842224359512329
+      ],
+      "min": [
+        -0.45842224359512329,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.69273817539215088
+      ],
+      "min": [
+        -0.69273817539215088,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        0.70710694789886475,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC2",
+      "max": [
+        18.048120498657227,
+        3.5596432685852051
+      ],
+      "min": [
+        -18.048120498657227,
+        -18.685039520263672
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 21,
+      "type": "SCALAR",
+      "max": [
+        14.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 27,
+      "type": "SCALAR",
+      "max": [
+        27.0
+      ],
+      "min": [
+        15.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cliffGrey_halfCorner.bin",
+      "byteLength": 1392
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 336,
+      "byteLength": 336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 672,
+      "byteLength": 448
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1120,
+      "byteLength": 224
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1344,
+      "byteLength": 21
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1365,
+      "byteLength": 27
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "cliffGrey_halfCorner"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        -12.2,
+        5.86553E-16,
+        -3.60000014
+      ],
+      "name": "cliffGrey_halfCorner"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cliffGrey_halfCorner"
+    }
+  ]
+}

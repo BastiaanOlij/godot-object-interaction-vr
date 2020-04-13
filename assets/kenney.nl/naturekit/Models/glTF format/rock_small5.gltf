@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC3",
+      "max": [
+        0.5,
+        0.70999997854232788,
+        0.43301272392272949
+      ],
+      "min": [
+        -0.5,
+        0.0,
+        -0.43301272392272949
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC3",
+      "max": [
+        0.85010874271392822,
+        1.0,
+        0.98162096738815308
+      ],
+      "min": [
+        -0.89187341928482056,
+        -1.0,
+        -0.98162096738815308
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        0.99730956554412842,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.866025447845459,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC2",
+      "max": [
+        19.685039520263672,
+        18.047744750976563
+      ],
+      "min": [
+        -19.685039520263672,
+        -25.373500823974609
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 129,
+      "type": "SCALAR",
+      "max": [
+        78.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 63,
+      "type": "SCALAR",
+      "max": [
+        101.0
+      ],
+      "min": [
+        79.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "rock_small5.bin",
+      "byteLength": 5088
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1224
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1224,
+      "byteLength": 1224
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2448,
+      "byteLength": 1632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4080,
+      "byteLength": 816
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4896,
+      "byteLength": 129
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5025,
+      "byteLength": 63
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "rock_small5"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.3608,
+        0.3608,
+        0.3608
+      ],
+      "translation": [
+        -4.29999971,
+        0.0,
+        4.1
+      ],
+      "name": "rock_small5"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "rock_small5"
+    }
+  ]
+}

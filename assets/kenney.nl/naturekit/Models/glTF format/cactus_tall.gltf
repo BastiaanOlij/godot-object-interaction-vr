@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3",
+      "max": [
+        0.33186531066894531,
+        2.369999885559082,
+        0.2175832986831665
+      ],
+      "min": [
+        -0.33186531066894531,
+        0.0,
+        -0.2175832986831665
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3",
+      "max": [
+        0.866025447845459,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.866025447845459,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        0.866025447845459,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.866025447845459,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2",
+      "max": [
+        14.063949584960938,
+        9.5662717819213867
+      ],
+      "min": [
+        -14.063949584960938,
+        -90.338584899902344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 360,
+      "type": "SCALAR",
+      "max": [
+        191.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cactus_tall.bin",
+      "byteLength": 9576
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2304
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2304,
+      "byteLength": 2304
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4608,
+      "byteLength": 3072
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7680,
+      "byteLength": 1536
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9216,
+      "byteLength": 360
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "cactus_tall"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.31,
+        0.31,
+        0.31
+      ],
+      "translation": [
+        1.748093,
+        3.60955732E-16,
+        8.926208
+      ],
+      "name": "cactus_tall"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cactus_tall"
+    }
+  ]
+}

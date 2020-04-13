@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 306,
+      "type": "VEC3",
+      "max": [
+        0.96076858043670654,
+        3.8039553165435791,
+        1.1094000339508057
+      ],
+      "min": [
+        -0.96076858043670654,
+        0.0,
+        -1.1094000339508057
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 306,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.866025447845459
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.866025447845459
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 306,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 306,
+      "type": "VEC2",
+      "max": [
+        37.825534820556641,
+        44.677165985107422
+      ],
+      "min": [
+        -37.825534820556641,
+        -141.52439880371094
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 546,
+      "type": "SCALAR",
+      "max": [
+        305.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "tree_pineSmall_round3.bin",
+      "byteLength": 15780
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3672
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3672,
+      "byteLength": 3672
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7344,
+      "byteLength": 4896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12240,
+      "byteLength": 2448
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14688,
+      "byteLength": 1092
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3372549,
+          0.627451,
+          0.698039234,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leaves"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "tree_pineSmall_round3"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.25,
+        0.2925,
+        0.25
+      ],
+      "translation": [
+        10.1,
+        0.0,
+        -4.29999971
+      ],
+      "name": "tree_pineSmall_round3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "tree_pineSmall_round3"
+    }
+  ]
+}

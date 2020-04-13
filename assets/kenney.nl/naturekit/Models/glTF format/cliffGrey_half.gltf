@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        1.1000000238418579,
+        1.1399999856948853
+      ],
+      "min": [
+        -3.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.9268791675567627
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 87,
+      "type": "VEC2",
+      "max": [
+        118.11023712158203,
+        20.546653747558594
+      ],
+      "min": [
+        -125.30056762695313,
+        -43.881889343261719
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 75,
+      "type": "SCALAR",
+      "max": [
+        44.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 84,
+      "type": "SCALAR",
+      "max": [
+        86.0
+      ],
+      "min": [
+        45.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "cliffGrey_half.bin",
+      "byteLength": 4335
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1044
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1044,
+      "byteLength": 1044
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2088,
+      "byteLength": 1392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3480,
+      "byteLength": 696
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4176,
+      "byteLength": 75
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4251,
+      "byteLength": 84
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "cliffGrey_half"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.333333343,
+        0.454545468,
+        0.4021248
+      ],
+      "translation": [
+        -11.0,
+        5.88604E-16,
+        -3.60000014
+      ],
+      "name": "cliffGrey_half"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "cliffGrey_half"
+    }
+  ]
+}

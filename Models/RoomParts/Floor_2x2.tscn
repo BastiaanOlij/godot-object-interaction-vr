@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/RoomParts/mesh200x200h.tres" type="CubeMesh" id=1]
+[ext_resource path="res://Models/RoomParts/shape200x200h.tres" type="Shape" id=2]
+[ext_resource path="res://Models/RoomParts/material_to_meshinstance.gd" type="Script" id=3]
+
+[node name="Floor_2x2" type="StaticBody"]
+collision_layer = 2
+script = ExtResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0 )
+shape = ExtResource( 2 )

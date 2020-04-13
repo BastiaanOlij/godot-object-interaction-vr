@@ -1,0 +1,166 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 540,
+      "type": "VEC3",
+      "max": [
+        0.17004728317260742,
+        0.56999999284744263,
+        0.15400390326976776
+      ],
+      "min": [
+        -0.17004728317260742,
+        0.0,
+        -0.15400390326976776
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 540,
+      "type": "VEC3",
+      "max": [
+        0.866025447845459,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.866025447845459,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 540,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        0.866025447845459,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.866025447845459,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 540,
+      "type": "VEC2",
+      "max": [
+        7.18090295791626,
+        6.79038143157959
+      ],
+      "min": [
+        -7.18090295791626,
+        -21.440944671630859
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 828,
+      "type": "SCALAR",
+      "max": [
+        539.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "bamboo.bin",
+      "byteLength": 27576
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6480
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6480,
+      "byteLength": 6480
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12960,
+      "byteLength": 8640
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21600,
+      "byteLength": 4320
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 25920,
+      "byteLength": 1656
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "bamboo"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        4.12631035,
+        0.0,
+        8.909759
+      ],
+      "name": "bamboo"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "bamboo"
+    }
+  ]
+}

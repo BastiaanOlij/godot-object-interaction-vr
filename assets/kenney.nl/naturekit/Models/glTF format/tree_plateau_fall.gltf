@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 369,
+      "type": "VEC3",
+      "max": [
+        1.2234785556793213,
+        4.9973602294921875,
+        1.3098000288009644
+      ],
+      "min": [
+        -1.2234785556793213,
+        0.0,
+        -1.3098000288009644
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 369,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.999981164932251
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.99966466426849365
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 369,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 369,
+      "type": "VEC2",
+      "max": [
+        43.814178466796875,
+        44.492156982421875
+      ],
+      "min": [
+        -43.814178466796875,
+        -184.55030822753906
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 480,
+      "type": "SCALAR",
+      "max": [
+        283.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 165,
+      "type": "SCALAR",
+      "max": [
+        368.0
+      ],
+      "min": [
+        284.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "tree_plateau_fall.bin",
+      "byteLength": 19002
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4428
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4428,
+      "byteLength": 4428
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8856,
+      "byteLength": 5904
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14760,
+      "byteLength": 2952
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17712,
+      "byteLength": 960
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18672,
+      "byteLength": 330
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9490196,
+          0.5529412,
+          0.145098045,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesFall"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "tree_plateau_fall"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "translation": [
+        10.0777111,
+        1.60296546E-31,
+        -0.698025
+      ],
+      "name": "tree_plateau_fall"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "tree_plateau_fall"
+    }
+  ]
+}

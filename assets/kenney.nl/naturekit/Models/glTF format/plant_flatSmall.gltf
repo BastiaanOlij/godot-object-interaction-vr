@@ -1,0 +1,166 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC3",
+      "max": [
+        0.13582780957221985,
+        0.28430941700935364,
+        0.13582780957221985
+      ],
+      "min": [
+        -0.13582780957221985,
+        0.0,
+        -0.13582780957221985
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        0.25114518404006958,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.70710676908493042,
+        0.0,
+        -0.70710676908493042,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC2",
+      "max": [
+        5.3475513458251953,
+        1.4608681201934814
+      ],
+      "min": [
+        -5.3475513458251953,
+        -10.193284034729004
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 96,
+      "type": "SCALAR",
+      "max": [
+        49.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "plant_flatSmall.bin",
+      "byteLength": 2496
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 600,
+      "byteLength": 600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1200,
+      "byteLength": 800
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2000,
+      "byteLength": 400
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2400,
+      "byteLength": 96
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "plant_flatSmall"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        4.10237169,
+        -3.554658E-34,
+        6.5055933
+      ],
+      "name": "plant_flatSmall"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "plant_flatSmall"
+    }
+  ]
+}

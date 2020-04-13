@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 62,
+      "type": "VEC3",
+      "max": [
+        0.6321985125541687,
+        2.1699998378753662,
+        0.60491639375686646
+      ],
+      "min": [
+        -0.6321985125541687,
+        0.0,
+        -0.60491639375686646
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 62,
+      "type": "VEC3",
+      "max": [
+        0.99016785621643066,
+        1.0,
+        0.97505569458007813
+      ],
+      "min": [
+        -0.99016785621643066,
+        -1.0,
+        -0.85878115892410278
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 62,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 62,
+      "type": "VEC2",
+      "max": [
+        24.889705657958984,
+        24.815607070922852
+      ],
+      "min": [
+        -24.889705657958984,
+        -83.425628662109375
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 102,
+      "type": "SCALAR",
+      "max": [
+        61.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "stone_tall3.bin",
+      "byteLength": 3078
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 744
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 744,
+      "byteLength": 744
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1488,
+      "byteLength": 992
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2480,
+      "byteLength": 496
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2976,
+      "byteLength": 102
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "stone_tall3"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.3608,
+        0.3608,
+        0.3608
+      ],
+      "translation": [
+        -9.087579,
+        0.0,
+        0.483391136
+      ],
+      "name": "stone_tall3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "stone_tall3"
+    }
+  ]
+}

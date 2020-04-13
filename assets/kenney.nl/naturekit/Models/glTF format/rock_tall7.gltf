@@ -1,0 +1,249 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 211,
+      "type": "VEC3",
+      "max": [
+        0.58889728784561157,
+        2.1699998378753662,
+        0.68000000715255737
+      ],
+      "min": [
+        -0.58889728784561157,
+        0.0,
+        -0.68000000715255737
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 211,
+      "type": "VEC3",
+      "max": [
+        0.99698895215988159,
+        1.0,
+        0.95576149225234985
+      ],
+      "min": [
+        -0.99698895215988159,
+        -1.0,
+        -0.97975242137908936
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 211,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 211,
+      "type": "VEC2",
+      "max": [
+        23.184932708740234,
+        27.77165412902832
+      ],
+      "min": [
+        -23.184932708740234,
+        -84.205360412597656
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 150,
+      "type": "SCALAR",
+      "max": [
+        91.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 177,
+      "type": "SCALAR",
+      "max": [
+        192.0
+      ],
+      "min": [
+        92.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5121,
+      "count": 36,
+      "type": "SCALAR",
+      "max": [
+        210.0
+      ],
+      "min": [
+        193.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "rock_tall7.bin",
+      "byteLength": 10491
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2532
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2532,
+      "byteLength": 2532
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5064,
+      "byteLength": 3376
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8440,
+      "byteLength": 1688
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10128,
+      "byteLength": 150
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10278,
+      "byteLength": 177
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10455,
+      "byteLength": 36
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "rock_tall7"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.3608,
+        0.3608,
+        0.3608
+      ],
+      "translation": [
+        -4.294083,
+        0.0,
+        1.69890583
+      ],
+      "name": "rock_tall7"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "rock_tall7"
+    }
+  ]
+}

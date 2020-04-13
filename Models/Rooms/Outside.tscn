@@ -1,0 +1,492 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://Models/RoomParts/Wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/cc0textures.com/WoodSiding009/WoodSiding009.tres" type="Material" id=2]
+[ext_resource path="res://Models/RoomParts/material_to_meshinstance.gd" type="Script" id=3]
+[ext_resource path="res://assets/cc0textures.com/Ground037/Ground037_2K_Color.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/cc0textures.com/Ground037/Ground037_2K_Roughness.jpg" type="Texture" id=5]
+[ext_resource path="res://assets/cc0textures.com/Ground037/Ground037_2K_Normal.jpg" type="Texture" id=6]
+[ext_resource path="res://Models/Kenney.nl/flower_beige1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Models/Kenney.nl/fence_gate.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Models/Kenney.nl/palm_large.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Models/Kenney.nl/fence_strong.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Models/Kenney.nl/fence_diagonal.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Models/Kenney.nl/stone_statue.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Models/Kenney.nl/fence_corner.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Models/Kenney.nl/stone_obelisk.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Models/Kenney.nl/stone_large1.tscn" type="PackedScene" id=15]
+
+[sub_resource type="VisualShaderNodeTextureUniformTriplanar" id=1]
+uniform_name = "AlbedoTexture"
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeTextureUniformTriplanar" id=2]
+uniform_name = "Roughness"
+
+[sub_resource type="VisualShaderNodeTextureUniformTriplanar" id=3]
+uniform_name = "Normal"
+texture_type = 2
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=4]
+
+[sub_resource type="VisualShaderNodeVectorLen" id=5]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=6]
+operator = 1
+
+[sub_resource type="VisualShaderNodeScalarOp" id=7]
+default_input_values = [ 0, 0.0, 1, 0.3 ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeScalarClamp" id=8]
+default_input_values = [ 0, 0.0, 1, -100.0, 2, 0.0 ]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=9]
+operator = 1
+
+[sub_resource type="VisualShaderNodeScalarUniform" id=10]
+uniform_name = "Offset"
+
+[sub_resource type="VisualShaderNodeTextureUniform" id=11]
+uniform_name = "Noise"
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=12]
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=13]
+
+[sub_resource type="VisualShaderNodeInput" id=14]
+input_name = "vertex"
+
+[sub_resource type="VisualShaderNodeScalarOp" id=15]
+default_input_values = [ 0, 0.0, 1, 10.0 ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeScalarOp" id=16]
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=17]
+
+[sub_resource type="VisualShader" id=18]
+code = "shader_type spatial;
+uniform sampler2D Noise;
+uniform float Offset;
+uniform sampler2D AlbedoTexture : hint_albedo;
+uniform sampler2D Roughness;
+uniform sampler2D Normal : hint_normal;
+
+
+// TRIPLANAR FUNCTION GLOBAL CODE
+	vec4 triplanar_texture(sampler2D p_sampler, vec3 p_weights, vec3 p_triplanar_pos) {
+		vec4 samp = vec4(0.0);
+		samp += texture(p_sampler, p_triplanar_pos.xy) * p_weights.z;
+		samp += texture(p_sampler, p_triplanar_pos.xz) * p_weights.y;
+		samp += texture(p_sampler, p_triplanar_pos.zy * vec2(-1.0, 1.0)) * p_weights.x;
+		return samp;
+	}
+
+	uniform vec3 triplanar_scale = vec3(1.0, 1.0, 1.0);
+	uniform vec3 triplanar_offset;
+	uniform float triplanar_sharpness = 0.5;
+
+	varying vec3 triplanar_power_normal;
+	varying vec3 triplanar_pos;
+
+void vertex() {
+// Input:5
+	vec3 n_out5p0 = VERTEX;
+
+// VectorDecompose:4
+	float n_out4p0 = n_out5p0.x;
+	float n_out4p1 = n_out5p0.y;
+	float n_out4p2 = n_out5p0.z;
+
+// TextureUniform:17
+	vec3 n_out17p0;
+	float n_out17p1;
+	{
+		vec4 n_tex_read = texture(Noise, UV.xy);
+		n_out17p0 = n_tex_read.rgb;
+		n_out17p1 = n_tex_read.a;
+	}
+
+// VectorDecompose:3
+	float n_out3p0 = n_out17p0.x;
+	float n_out3p1 = n_out17p0.y;
+	float n_out3p2 = n_out17p0.z;
+
+// ScalarOp:6
+	float n_in6p1 = 10.00000;
+	float n_out6p0 = n_out3p0 * n_in6p1;
+
+// ScalarOp:7
+	float n_out7p0 = n_out4p1 + n_out6p0;
+
+// VectorCompose:10
+	float n_in10p2 = 0.00000;
+	vec3 n_out10p0 = vec3(n_out4p0, n_out4p2, n_in10p2);
+
+// VectorLen:11
+	float n_out11p0 = length(n_out10p0);
+
+// ScalarOp:13
+	float n_in13p1 = 0.30000;
+	float n_out13p0 = n_out11p0 * n_in13p1;
+
+// ScalarOp:12
+	float n_out12p0 = n_out7p0 - n_out13p0;
+
+// ScalarUniform:16
+	float n_out16p0 = Offset;
+
+// ScalarOp:15
+	float n_out15p0 = n_out12p0 - n_out16p0;
+
+// ScalarClamp:14
+	float n_in14p1 = -100.00000;
+	float n_in14p2 = 0.00000;
+	float n_out14p0 = clamp(n_out15p0, n_in14p1, n_in14p2);
+
+// VectorCompose:8
+	vec3 n_out8p0 = vec3(n_out4p0, n_out14p0, n_out4p2);
+
+// Output:0
+	VERTEX = n_out8p0;
+
+	// TRIPLANAR FUNCTION VERTEX CODE
+		triplanar_power_normal = pow(abs(NORMAL), vec3(triplanar_sharpness));
+		triplanar_power_normal /= dot(triplanar_power_normal, vec3(1.0));
+		triplanar_pos = VERTEX * triplanar_scale + triplanar_offset;
+		triplanar_pos *= vec3(1.0, -1.0, 1.0);
+}
+
+void fragment() {
+// TextureUniformTriplanar:2
+	vec3 n_out2p0;
+	float n_out2p1;
+	{
+		vec4 n_tex_read = triplanar_texture( AlbedoTexture, triplanar_power_normal, triplanar_pos );
+		n_out2p0 = n_tex_read.rgb;
+		n_out2p1 = n_tex_read.a;
+	}
+
+// TextureUniformTriplanar:3
+	vec3 n_out3p0;
+	float n_out3p1;
+	{
+		vec4 n_tex_read = triplanar_texture( Roughness, triplanar_power_normal, triplanar_pos );
+		n_out3p0 = n_tex_read.rgb;
+		n_out3p1 = n_tex_read.a;
+	}
+
+// TextureUniformTriplanar:4
+	vec3 n_out4p0;
+	float n_out4p1;
+	{
+		vec4 n_tex_read = triplanar_texture( Normal, triplanar_power_normal, triplanar_pos );
+		n_out4p0 = n_tex_read.rgb;
+		n_out4p1 = n_tex_read.a;
+	}
+
+// Output:0
+	ALBEDO = n_out2p0;
+	ROUGHNESS = dot(n_out3p0, vec3(0.333333, 0.333333, 0.333333));
+	NORMALMAP = n_out4p0;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( 51.7806, -322.355 )
+nodes/vertex/0/position = Vector2( 1800, -120 )
+nodes/vertex/3/node = SubResource( 12 )
+nodes/vertex/3/position = Vector2( 140, 20 )
+nodes/vertex/4/node = SubResource( 13 )
+nodes/vertex/4/position = Vector2( -40, -240 )
+nodes/vertex/5/node = SubResource( 14 )
+nodes/vertex/5/position = Vector2( -220, -180 )
+nodes/vertex/6/node = SubResource( 15 )
+nodes/vertex/6/position = Vector2( 380, 20 )
+nodes/vertex/7/node = SubResource( 16 )
+nodes/vertex/7/position = Vector2( 600, -100 )
+nodes/vertex/8/node = SubResource( 17 )
+nodes/vertex/8/position = Vector2( 1540, -140 )
+nodes/vertex/10/node = SubResource( 4 )
+nodes/vertex/10/position = Vector2( 220, -360 )
+nodes/vertex/11/node = SubResource( 5 )
+nodes/vertex/11/position = Vector2( 440, -360 )
+nodes/vertex/12/node = SubResource( 6 )
+nodes/vertex/12/position = Vector2( 860, -320 )
+nodes/vertex/13/node = SubResource( 7 )
+nodes/vertex/13/position = Vector2( 620, -360 )
+nodes/vertex/14/node = SubResource( 8 )
+nodes/vertex/14/position = Vector2( 1320, -260 )
+nodes/vertex/15/node = SubResource( 9 )
+nodes/vertex/15/position = Vector2( 1100, -260 )
+nodes/vertex/16/node = SubResource( 10 )
+nodes/vertex/16/position = Vector2( 820, 80 )
+nodes/vertex/17/node = SubResource( 11 )
+nodes/vertex/17/position = Vector2( -80, 20 )
+nodes/vertex/connections = PoolIntArray( 5, 0, 4, 0, 6, 0, 7, 1, 4, 1, 7, 0, 4, 2, 8, 2, 4, 0, 8, 0, 8, 0, 0, 0, 3, 0, 6, 0, 4, 0, 10, 0, 4, 2, 10, 1, 10, 0, 11, 0, 7, 0, 12, 0, 11, 0, 13, 0, 13, 0, 12, 1, 14, 0, 8, 1, 12, 0, 15, 0, 15, 0, 14, 0, 16, 0, 15, 1, 17, 0, 3, 0 )
+nodes/fragment/0/position = Vector2( 800, 80 )
+nodes/fragment/2/node = SubResource( 1 )
+nodes/fragment/2/position = Vector2( 380, -60 )
+nodes/fragment/3/node = SubResource( 2 )
+nodes/fragment/3/position = Vector2( 380, 160 )
+nodes/fragment/4/node = SubResource( 3 )
+nodes/fragment/4/position = Vector2( 380, 400 )
+nodes/fragment/connections = PoolIntArray( 2, 0, 0, 0, 3, 0, 0, 3, 4, 0, 0, 8 )
+
+[sub_resource type="OpenSimplexNoise" id=19]
+seed = 1
+
+[sub_resource type="NoiseTexture" id=20]
+noise = SubResource( 19 )
+
+[sub_resource type="ShaderMaterial" id=21]
+shader = SubResource( 18 )
+shader_param/Offset = -1.0
+shader_param/triplanar_scale = Vector3( 1, 1, 1 )
+shader_param/triplanar_offset = null
+shader_param/triplanar_sharpness = 0.5
+shader_param/Noise = SubResource( 20 )
+shader_param/AlbedoTexture = ExtResource( 4 )
+shader_param/Roughness = ExtResource( 5 )
+shader_param/Normal = ExtResource( 6 )
+
+[sub_resource type="PlaneMesh" id=22]
+material = SubResource( 21 )
+size = Vector2( 100, 100 )
+subdivide_width = 255
+subdivide_depth = 255
+
+[node name="Outside" type="Spatial"]
+
+[node name="Ground01" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.047, 0, -0.138 )
+mesh = SubResource( 22 )
+material/0 = null
+
+[node name="Wall01" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall02" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall03" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 7.5, 0, -8 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall04" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 8.5, 0, -8 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall05" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 9.5, 0, -8 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall06" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 10.5, 0, -8 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall07" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 11.5, 0, -8 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall08" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 12.5, 0, -8 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall13" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall12" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall11" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall10" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Wall09" type="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 0, -2 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+material = ExtResource( 2 )
+
+[node name="Garden" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5 )
+
+[node name="flower_beige1" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -6, 0, -7 )
+
+[node name="flower_beige2" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -5.71984, 0, -7.41399 )
+
+[node name="flower_beige3" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -6.12291, 0, -7.95193 )
+
+[node name="flower_beige4" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -5.78003, 0, -8.43043 )
+
+[node name="flower_beige5" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -6.29898, 0, -8.91851 )
+
+[node name="flower_beige6" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -6.46504, 0, -8.29027 )
+
+[node name="flower_beige7" type="Spatial" parent="Garden" instance=ExtResource( 7 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -6.34163, 0, -7.37358 )
+
+[node name="palm_large" type="Spatial" parent="Garden" instance=ExtResource( 9 )]
+transform = Transform( -0.550714, 0, 0.834694, 0, 1, 0, -0.834694, 0, -0.550714, -6.36044, 0, -6.55927 )
+
+[node name="palm_large3" type="Spatial" parent="Garden" instance=ExtResource( 9 )]
+transform = Transform( -0.550714, 0, 0.834694, 0, 1, 0, -0.834694, 0, -0.550714, -5.67212, 0, 1.91454 )
+
+[node name="palm_large2" type="Spatial" parent="Garden" instance=ExtResource( 9 )]
+transform = Transform( 0.956233, 0, 0.292605, 0, 1, 0, -0.292605, 0, 0.956233, -4.80122, 0, -12.2934 )
+
+[node name="palm_large4" type="Spatial" parent="Garden" instance=ExtResource( 9 )]
+transform = Transform( 0.507012, 0, -0.861939, 0, 1, 0, 0.861939, 0, 0.507012, 1.7467, 0, -13.1593 )
+
+[node name="fence_strong01" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -2 )
+
+[node name="fence_gate" type="Spatial" parent="Garden" instance=ExtResource( 8 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -4 )
+
+[node name="fence_strong07" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -6 )
+
+[node name="fence_strong08" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -8 )
+
+[node name="fence_strong09" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -10 )
+
+[node name="fence_strong10" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -12 )
+
+[node name="fence_strong11" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -14 )
+
+[node name="fence_strong12" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -14 )
+
+[node name="fence_strong13" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -14 )
+
+[node name="fence_strong14" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -14 )
+
+[node name="fence_strong15" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -14 )
+
+[node name="fence_strong16" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 7, 0, -12 )
+
+[node name="fence_strong17" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10 )
+
+[node name="fence_strong18" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 15, 0, -6 )
+
+[node name="fence_strong19" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 15, 0, -4 )
+
+[node name="fence_strong20" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 15, 0, -2 )
+
+[node name="fence_strong02" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, 0 )
+
+[node name="fence_strong05" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -5, 0, 4 )
+
+[node name="fence_strong23" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 5, 0, 4 )
+
+[node name="fence_strong25" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 7, 0, 4 )
+
+[node name="fence_strong24" type="Spatial" parent="Garden" instance=ExtResource( 10 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 3, 0, 4 )
+
+[node name="fence_corner" type="Spatial" parent="Garden" instance=ExtResource( 13 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -7, 0, 4 )
+
+[node name="fence_corner2" type="Spatial" parent="Garden" instance=ExtResource( 13 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -7, 0, -14 )
+
+[node name="fence_corner3" type="Spatial" parent="Garden" instance=ExtResource( 13 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 5, 0, -12 )
+
+[node name="fence_diagonal" type="Spatial" parent="Garden" instance=ExtResource( 11 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 9, 0, -10 )
+
+[node name="fence_diagonal2" type="Spatial" parent="Garden" instance=ExtResource( 11 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 13, 0, -2 )
+
+[node name="stone_statue" type="Spatial" parent="Garden" instance=ExtResource( 12 )]
+transform = Transform( -0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 10.5701, 0, 0.888934 )
+
+[node name="stone_obelisk" type="Spatial" parent="Garden" instance=ExtResource( 14 )]
+transform = Transform( -0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 8.9918, 0, -9.70178 )
+
+[node name="fence_diagonal3" type="Spatial" parent="Garden" instance=ExtResource( 11 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 11, 0, 0 )
+
+[node name="fence_diagonal4" type="Spatial" parent="Garden" instance=ExtResource( 11 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 9, 0, 2 )
+
+[node name="fence_corner5" type="Spatial" parent="Garden" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -10 )
+
+[node name="stone_large1" type="Spatial" parent="Garden" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.10586, -0.414061, -12.2615 )

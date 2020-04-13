@@ -1,0 +1,278 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 791,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        0.25,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -6.8581585350232111E-15
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 791,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 791,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.10721790045499802,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.10336121171712875,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 791,
+      "type": "VEC2",
+      "max": [
+        40.181251525878906,
+        11.127645492553711
+      ],
+      "min": [
+        -47.584831237792969,
+        -38.370079040527344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 1026,
+      "type": "SCALAR",
+      "max": [
+        683.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 150,
+      "type": "SCALAR",
+      "max": [
+        687.0
+      ],
+      "min": [
+        34.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 9,
+      "type": "SCALAR",
+      "max": [
+        696.0
+      ],
+      "min": [
+        688.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 276,
+      "type": "SCALAR",
+      "max": [
+        790.0
+      ],
+      "min": [
+        697.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "ground_dirtRiverBanks.bin",
+      "byteLength": 40890
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 9492
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9492,
+      "byteLength": 9492
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18984,
+      "byteLength": 12656
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 31640,
+      "byteLength": 6328
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 37968,
+      "byteLength": 2052
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 40020,
+      "byteLength": 300
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 40320,
+      "byteLength": 18
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 40338,
+      "byteLength": 552
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6911765,
+          0.957887769,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.18000000715255737,
+        "roughnessFactor": 0.59900000691413879
+      },
+      "name": "natureKit-water"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 7,
+          "material": 3
+        }
+      ],
+      "name": "ground_dirtRiverBanks"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        3.39999986,
+        4.51194665E-17,
+        -1.2
+      ],
+      "name": "ground_dirtRiverBanks"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "ground_dirtRiverBanks"
+    }
+  ]
+}

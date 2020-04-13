@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 232,
+      "type": "VEC3",
+      "max": [
+        0.49388831853866577,
+        0.59083759784698486,
+        0.49388831853866577
+      ],
+      "min": [
+        -0.49388831853866577,
+        0.0,
+        -0.49388831853866577
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 232,
+      "type": "VEC3",
+      "max": [
+        0.97980976104736328,
+        0.97184699773788452,
+        0.97094875574111938
+      ],
+      "min": [
+        -0.97980976104736328,
+        -0.97184699773788452,
+        -0.97094875574111938
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 232,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 232,
+      "type": "VEC2",
+      "max": [
+        5.7086615562438965,
+        18.401163101196289
+      ],
+      "min": [
+        -5.7086615562438965,
+        -24.98652458190918
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 312,
+      "type": "SCALAR",
+      "max": [
+        231.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "plant_bushDetailed.bin",
+      "byteLength": 11448
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2784
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2784,
+      "byteLength": 2784
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5568,
+      "byteLength": 3712
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9280,
+      "byteLength": 1856
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11136,
+      "byteLength": 312
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "plant_bushDetailed"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.61,
+        0.61,
+        0.61
+      ],
+      "translation": [
+        4.09324455,
+        0.0,
+        5.296307
+      ],
+      "name": "plant_bushDetailed"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "plant_bushDetailed"
+    }
+  ]
+}

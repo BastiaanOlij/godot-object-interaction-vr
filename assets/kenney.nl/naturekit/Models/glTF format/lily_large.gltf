@@ -1,0 +1,205 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 152,
+      "type": "VEC3",
+      "max": [
+        0.13909320533275604,
+        0.073300004005432129,
+        0.16061100363731384
+      ],
+      "min": [
+        -0.13909320533275604,
+        0.0,
+        -0.16061100363731384
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 152,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.96074980497360229
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.96074980497360229
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 152,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 152,
+      "type": "VEC2",
+      "max": [
+        5.5537657737731934,
+        7.323267936706543
+      ],
+      "min": [
+        -5.5537657737731934,
+        -5.323267936706543
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 270,
+      "type": "SCALAR",
+      "max": [
+        119.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 54,
+      "type": "SCALAR",
+      "max": [
+        151.0
+      ],
+      "min": [
+        87.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "lily_large.bin",
+      "byteLength": 7620
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1824
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1824,
+      "byteLength": 1824
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3648,
+      "byteLength": 2432
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6080,
+      "byteLength": 1216
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7296,
+      "byteLength": 270
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7566,
+      "byteLength": 54
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8784314,
+          0.2901961,
+          0.3137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-mushroom"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "lily_large"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        5.319969,
+        0.0,
+        2.89927363
+      ],
+      "name": "lily_large"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "lily_large"
+    }
+  ]
+}

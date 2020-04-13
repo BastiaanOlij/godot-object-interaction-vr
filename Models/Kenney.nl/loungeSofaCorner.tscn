@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/kenney.nl/furnaturekit/Models/GLTF format/loungeSofaCorner.glb" type="PackedScene" id=1]
+[ext_resource path="res://assets/cc0textures.com/Leather024/Leather024.tres" type="Material" id=2]
+[ext_resource path="res://assets/cc0textures.com/Wood038/Wood038.tres" type="Material" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.410594, 0.153648, 0.982143 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.982, 0.154, 0.411 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.981345, 0.425054, 0.0849042 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.085, 0.425, 0.981 )
+
+[node name="loungeSofaCorner" type="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.80886, 0, 2.79714 )
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445858, 0.313158, -1.01808 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0238, 0.313158, -0.447899 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0238, 0.499391, -0.124944 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.133968, 0.499391, -1.01985 )
+shape = SubResource( 4 )
+
+[node name="loungeSofaCorner" parent="." instance=ExtResource( 1 )]
+transform = Transform( -2, 0, -6.51683e-07, 0, 2, 0, 6.51683e-07, 0, -2, 2.01076, 0, -1.98309 )
+
+[node name="loungeSofaCornerClone" parent="loungeSofaCorner" index="0"]
+material/0 = ExtResource( 2 )
+material/1 = ExtResource( 3 )
+
+[editable path="loungeSofaCorner"]

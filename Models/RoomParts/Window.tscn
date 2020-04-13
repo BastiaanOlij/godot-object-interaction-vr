@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+albedo_color = Color( 0.184314, 0.25098, 0.2, 0.0980392 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 0.1, 1.1, 2 )
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 0.15, 0.1, 2 )
+
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 0.15, 1.2, 0.1 )
+
+[node name="Window" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.25, 0 )
+
+[node name="Glass" type="MeshInstance" parent="."]
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Frame01" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Frame03" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.985 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Frame04" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.985 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Frame02" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.55, 0 )
+mesh = SubResource( 3 )
+material/0 = null

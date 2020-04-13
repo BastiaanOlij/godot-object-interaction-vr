@@ -1,0 +1,205 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 368,
+      "type": "VEC3",
+      "max": [
+        0.15000000596046448,
+        0.18250000476837158,
+        0.574999988079071
+      ],
+      "min": [
+        -0.15000000596046448,
+        1.2022240344150706E-31,
+        -0.574999988079071
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 368,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 368,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.033258166164159775,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.041369825601577759,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 368,
+      "type": "VEC2",
+      "max": [
+        20.205295562744141,
+        23.637794494628906
+      ],
+      "min": [
+        -21.317440032958984,
+        -21.637794494628906
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 468,
+      "type": "SCALAR",
+      "max": [
+        223.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 144,
+      "type": "SCALAR",
+      "max": [
+        367.0
+      ],
+      "min": [
+        224.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "canoe.bin",
+      "byteLength": 18420
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4416
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4416,
+      "byteLength": 4416
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8832,
+      "byteLength": 5888
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14720,
+      "byteLength": 2944
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17664,
+      "byteLength": 468
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18132,
+      "byteLength": 288
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8784314,
+          0.2901961,
+          0.3137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-mushroom"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "canoe"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        10.1,
+        -1.35358393E-16,
+        4.1
+      ],
+      "name": "canoe"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "canoe"
+    }
+  ]
+}

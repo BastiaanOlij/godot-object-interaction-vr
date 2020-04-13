@@ -1,0 +1,157 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://addons/godot-oculus/scenes/oculus_first_person.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/godot-xr-tools/functions/Function_Direct_movement.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/godot-xr-tools/functions/Function_Teleport.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/godot-xr-tools/misc/VR_Common_Shader_Cache.tscn" type="PackedScene" id=4]
+[ext_resource path="res://addons/godot-xr-tools/functions/Function_Pickup.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/Rooms/Hallway.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main.gd" type="Script" id=7]
+[ext_resource path="res://Models/Rooms/Bathroom.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Models/Rooms/Outside.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Models/Misc/Follow.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Models/Rooms/Bedroom2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Models/Rooms/Livingroom.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Models/Rooms/Bedroom1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Models/Kenney.nl/glass_material.tres" type="Material" id=15]
+
+[sub_resource type="CubeMesh" id=1]
+material = ExtResource( 15 )
+size = Vector3( 1, 1.15, 0.05 )
+
+[sub_resource type="PlaneMesh" id=2]
+size = Vector2( 3, 2 )
+
+[sub_resource type="ViewportTexture" id=3]
+viewport_path = NodePath("Rooms/FakeMirrorBathroom/WindowViewport")
+
+[sub_resource type="SpatialMaterial" id=4]
+resource_local_to_scene = true
+resource_name = "MirrorViewportMaterial"
+flags_unshaded = true
+albedo_texture = SubResource( 3 )
+uv1_scale = Vector3( -1, 1, 1 )
+uv1_offset = Vector3( 1, 0, 0 )
+
+[sub_resource type="PlaneMesh" id=5]
+size = Vector2( 1, 2.5 )
+
+[sub_resource type="ViewportTexture" id=6]
+viewport_path = NodePath("Rooms/FakeMirrorBathroom/DoorViewport")
+
+[sub_resource type="SpatialMaterial" id=7]
+resource_local_to_scene = true
+resource_name = "DoorMirrorMaterial"
+flags_unshaded = true
+albedo_texture = SubResource( 6 )
+
+[node name="Main" type="Spatial"]
+script = ExtResource( 7 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -0.69065, -0.636973, -0.342444, 0.12941, -0.57473, 0.808046, -0.711516, 0.513762, 0.479368, 0, 10, 0 )
+visible = false
+light_energy = 3.13
+light_specular = 0.08
+shadow_enabled = true
+shadow_bias = 0.01
+directional_shadow_normal_bias = 0.01
+directional_shadow_max_distance = 20.0
+
+[node name="OculusFirstPerson" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -4, 0, -3.5 )
+
+[node name="vr_common_shader_cache" parent="OculusFirstPerson/ARVRCamera" index="1" instance=ExtResource( 4 )]
+
+[node name="Function_Teleport" parent="OculusFirstPerson/Left_Hand" index="1" instance=ExtResource( 3 )]
+collision_mask = 1022
+player_height = 1.5
+player_radius = 0.2
+camera = NodePath("../../ARVRCamera")
+
+[node name="Capsule" parent="OculusFirstPerson/Left_Hand/Function_Teleport/Target/Player_figure" index="0"]
+visible = false
+
+[node name="Function_Pickup" parent="OculusFirstPerson/Left_Hand" index="2" instance=ExtResource( 5 )]
+collision_mask = 4
+pickup_range = 0.35
+
+[node name="Follow" parent="OculusFirstPerson/Left_Hand" index="3" instance=ExtResource( 10 )]
+
+[node name="Function_Direct_movement" parent="OculusFirstPerson/Right_Hand" index="1" instance=ExtResource( 2 )]
+camera = NodePath("../../ARVRCamera")
+player_radius = 0.2
+smooth_rotation = true
+canFly = false
+
+[node name="Function_Pickup" parent="OculusFirstPerson/Right_Hand" index="2" instance=ExtResource( 5 )]
+collision_mask = 4
+pickup_range = 0.35
+
+[node name="Follow" parent="OculusFirstPerson/Right_Hand" index="3" instance=ExtResource( 10 )]
+
+[node name="Rooms" type="Spatial" parent="."]
+
+[node name="Outside" parent="Rooms" instance=ExtResource( 9 )]
+
+[node name="Bathroom" parent="Rooms" instance=ExtResource( 8 )]
+
+[node name="FakeMirrorBathroom" type="Spatial" parent="Rooms"]
+
+[node name="Mirror_Bathroom" parent="Rooms/FakeMirrorBathroom" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 4 )
+
+[node name="Mirror" type="Spatial" parent="Rooms/FakeMirrorBathroom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1.25, 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Rooms/FakeMirrorBathroom/Mirror"]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="WindowViewport" type="Viewport" parent="Rooms/FakeMirrorBathroom"]
+size = Vector2( 450, 300 )
+keep_3d_linear = true
+render_target_v_flip = true
+render_target_update_mode = 1
+
+[node name="Camera" type="Camera" parent="Rooms/FakeMirrorBathroom/WindowViewport"]
+transform = Transform( 0.590901, 0, 0.806744, 0, 1, 0, -0.806744, 0, 0.590901, -2.74194, 1.25, 0.133958 )
+projection = 2
+size = 0.1
+frustum_offset = Vector2( -0.01, 0 )
+near = 0.1
+
+[node name="MirrorWindow" type="MeshInstance" parent="Rooms/FakeMirrorBathroom"]
+transform = Transform( -1.62921e-07, 1, -1.62921e-07, 0, -1.62921e-07, -1, -1, -1.62921e-07, 2.65431e-14, -3.117, 1.15, 4 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 4 )
+
+[node name="DoorViewport" type="Viewport" parent="Rooms/FakeMirrorBathroom"]
+size = Vector2( 100, 250 )
+keep_3d_linear = true
+render_target_update_mode = 1
+
+[node name="Camera" type="Camera" parent="Rooms/FakeMirrorBathroom/DoorViewport"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500517, 1.25, 2.103 )
+cull_mask = 1023
+fov = 30.0
+near = 4.0
+far = 20.0
+
+[node name="DoorExit" type="MeshInstance" parent="Rooms/FakeMirrorBathroom"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, -0.5, 1.25, 6.00322 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 7 )
+
+[node name="Hallway" parent="Rooms" instance=ExtResource( 6 )]
+
+[node name="Livingroom" parent="Rooms" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8 )
+
+[node name="Bedroom1" parent="Rooms" instance=ExtResource( 13 )]
+
+[node name="Bedroom2" parent="Rooms" instance=ExtResource( 11 )]
+
+[editable path="OculusFirstPerson"]
+
+[editable path="OculusFirstPerson/Left_Hand/Function_Teleport"]

@@ -1,0 +1,243 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 135,
+      "type": "VEC3",
+      "max": [
+        1.518096923828125,
+        1.3274999856948853,
+        1.2458178997039795
+      ],
+      "min": [
+        -1.518096923828125,
+        0.0,
+        -1.2458178997039795
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 135,
+      "type": "VEC3",
+      "max": [
+        0.85859525203704834,
+        1.0,
+        0.93367421627044678
+      ],
+      "min": [
+        -0.88315469026565552,
+        -1.0,
+        -0.88419657945632935
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 135,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.047473955899477005,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.0472760871052742,
+        -0.97875422239303589,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 135,
+      "type": "VEC2",
+      "max": [
+        52.374855041503906,
+        40.010421752929688
+      ],
+      "min": [
+        -45.815982818603516,
+        -47.357395172119141
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 174,
+      "type": "SCALAR",
+      "max": [
+        103.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 24,
+      "type": "SCALAR",
+      "max": [
+        113.0
+      ],
+      "min": [
+        104.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5121,
+      "count": 21,
+      "type": "SCALAR",
+      "max": [
+        134.0
+      ],
+      "min": [
+        114.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "rock_large6.bin",
+      "byteLength": 6699
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1620
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1620,
+      "byteLength": 1620
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3240,
+      "byteLength": 2160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5400,
+      "byteLength": 1080
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6480,
+      "byteLength": 174
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6654,
+      "byteLength": 24
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6678,
+      "byteLength": 21
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-_defaultMat"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "rock_large6"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.3608,
+        0.3608,
+        0.3608
+      ],
+      "translation": [
+        -0.7277293,
+        0.0,
+        5.29949141
+      ],
+      "name": "rock_large6"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "rock_large6"
+    }
+  ]
+}

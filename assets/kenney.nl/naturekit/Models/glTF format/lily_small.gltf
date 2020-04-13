@@ -1,0 +1,171 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 112,
+      "type": "VEC3",
+      "max": [
+        0.26846787333488464,
+        0.10000000149011612,
+        0.31000000238418579
+      ],
+      "min": [
+        -0.26846787333488464,
+        0.0,
+        -0.31000000238418579
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 112,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        0.866025447845459
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.866025447845459
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 112,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.866025447845459,
+        0.0,
+        -0.72498601675033569,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 112,
+      "type": "VEC2",
+      "max": [
+        11.704083442687988,
+        13.204724311828613
+      ],
+      "min": [
+        -11.704083442687988,
+        -11.204724311828613
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 228,
+      "type": "SCALAR",
+      "max": [
+        111.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "lily_small.bin",
+      "byteLength": 5604
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1344
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1344,
+      "byteLength": 1344
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2688,
+      "byteLength": 1792
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4480,
+      "byteLength": 896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5376,
+      "byteLength": 228
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3529412,
+          0.768627465,
+          0.7137255,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-leavesGreen"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "lily_small"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.33,
+        0.33,
+        0.33
+      ],
+      "translation": [
+        5.31814861,
+        0.0,
+        4.099652
+      ],
+      "name": "lily_small"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "lily_small"
+    }
+  ]
+}

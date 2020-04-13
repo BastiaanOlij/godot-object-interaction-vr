@@ -1,0 +1,294 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        0.34502732753753662,
+        0.070000000298023224
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2",
+      "max": [
+        39.370079040527344,
+        1.0
+      ],
+      "min": [
+        -39.370079040527344,
+        -12.583752632141113
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 384,
+      "type": "SCALAR",
+      "max": [
+        191.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 212,
+      "type": "VEC3",
+      "max": [
+        0.30000001192092896,
+        0.2829224169254303,
+        0.012949999421834946
+      ],
+      "min": [
+        0.0,
+        -0.039999999105930328,
+        -0.012949999421834946
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 212,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 212,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 212,
+      "type": "VEC2",
+      "max": [
+        11.811023712158203,
+        7.2570161819458008
+      ],
+      "min": [
+        -11.811023712158203,
+        -10.138677597045898
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5121,
+      "count": 450,
+      "type": "SCALAR",
+      "max": [
+        211.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "fence_gate.bin",
+      "byteLength": 20226
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2304
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2304,
+      "byteLength": 2304
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4608,
+      "byteLength": 3072
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7680,
+      "byteLength": 1536
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9216,
+      "byteLength": 384
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9600,
+      "byteLength": 2544
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12144,
+      "byteLength": 2544
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14688,
+      "byteLength": 3392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18080,
+      "byteLength": 1696
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19776,
+      "byteLength": 450
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.68235296,
+          0.435294122,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "fence_gate"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0
+        }
+      ],
+      "name": "gate"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "mesh": 0,
+      "translation": [
+        3.39999986,
+        0.0,
+        0.0
+      ],
+      "name": "fence_gate"
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        -0.65,
+        0.0621049181,
+        0.035
+      ],
+      "name": "gate"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "fence_gate"
+    }
+  ]
+}

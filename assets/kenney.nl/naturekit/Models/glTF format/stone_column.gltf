@@ -1,0 +1,166 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 424,
+      "type": "VEC3",
+      "max": [
+        0.11205058544874191,
+        1.0,
+        0.11205058544874191
+      ],
+      "min": [
+        -0.11205058544874191,
+        0.0,
+        -0.11205058544874191
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 424,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 424,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 424,
+      "type": "VEC2",
+      "max": [
+        4.411440372467041,
+        5.411440372467041
+      ],
+      "min": [
+        -4.411440372467041,
+        -37.832279205322266
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 732,
+      "type": "SCALAR",
+      "max": [
+        423.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "stone_column.bin",
+      "byteLength": 21816
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 5088
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5088,
+      "byteLength": 5088
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10176,
+      "byteLength": 6784
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16960,
+      "byteLength": 3392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20352,
+      "byteLength": 1464
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.65882355,
+          0.807843149,
+          0.827451,
+          1.0
+        ],
+        "metallicFactor": 0.25
+      },
+      "name": "natureKit-stone"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "stone_column"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        6.5,
+        0.0,
+        5.3
+      ],
+      "name": "stone_column"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "stone_column"
+    }
+  ]
+}

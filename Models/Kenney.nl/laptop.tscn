@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/godot-xr-tools/objects/Object_pickable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/kenney.nl/furnaturekit/Models/GLTF format/laptop.glb" type="PackedScene" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.28, 0.0145224, 0.24 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.28, 0.0129103, 0.16 )
+
+[node name="laptop" instance=ExtResource( 1 )]
+collision_layer = 4
+collision_mask = 1022
+mass = 2.0
+reset_transform_on_pickup = false
+highlight_mesh_instance = NodePath("laptop/laptopClone")
+picked_up_layer = 1024
+
+[node name="CollisionShape" parent="." index="0"]
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="." index="1"]
+transform = Transform( 1, 0, 0, 0, 0.414677, 0.909968, 0, -0.909968, 0.414677, 0, 0.148246, 0.158576 )
+shape = SubResource( 2 )
+
+[node name="laptop" parent="." index="2" instance=ExtResource( 2 )]
+transform = Transform( -2, 0, -6.51683e-07, 0, 2, 0, 6.51683e-07, 0, -2, 0.263735, -0.0121754, -0.238836 )
+
+[editable path="laptop"]
