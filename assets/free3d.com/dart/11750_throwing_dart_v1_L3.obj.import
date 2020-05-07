@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/11750_throwing_dart_v1_L3.obj-ea389ce5f6f0b3cde28c95da3bef9de7.mesh"
+
+[deps]
+
+files=[ "res://.import/11750_throwing_dart_v1_L3.obj-ea389ce5f6f0b3cde28c95da3bef9de7.mesh" ]
+
+source_file="res://assets/free3d.com/dart/11750_throwing_dart_v1_L3.obj"
+dest_files=[ "res://.import/11750_throwing_dart_v1_L3.obj-ea389ce5f6f0b3cde28c95da3bef9de7.mesh", "res://.import/11750_throwing_dart_v1_L3.obj-ea389ce5f6f0b3cde28c95da3bef9de7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 0.02, 0.02, 0.02 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

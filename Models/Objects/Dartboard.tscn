@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/free3d.com/dartboard/11721_darboard_V4_L3.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.268181
+height = 0.0276308
+
+[node name="Dartboard" type="Area"]
+collision_layer = 8
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, -0.00487602 )
+shape = SubResource( 1 )

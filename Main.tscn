@@ -59,7 +59,7 @@ directional_shadow_normal_bias = 0.01
 directional_shadow_max_distance = 20.0
 
 [node name="OculusFirstPerson" parent="." instance=ExtResource( 1 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -4, 0, -3.5 )
+transform = Transform( 0.95634, 0, -0.292255, 0, 1, 0, 0.292255, 0, 0.95634, 2.4678, 0, -7.13759 )
 
 [node name="vr_common_shader_cache" parent="OculusFirstPerson/ARVRCamera" index="1" instance=ExtResource( 4 )]
 
@@ -73,20 +73,22 @@ camera = NodePath("../../ARVRCamera")
 visible = false
 
 [node name="Function_Pickup" parent="OculusFirstPerson/Left_Hand" index="2" instance=ExtResource( 5 )]
-collision_mask = 4
+collision_mask = 12
 pickup_range = 0.35
+impulse_factor = 1.5
 
 [node name="Follow" parent="OculusFirstPerson/Left_Hand" index="3" instance=ExtResource( 10 )]
 
 [node name="Function_Direct_movement" parent="OculusFirstPerson/Right_Hand" index="1" instance=ExtResource( 2 )]
 camera = NodePath("../../ARVRCamera")
-player_radius = 0.2
+player_radius = 0.1
 smooth_rotation = true
 canFly = false
 
 [node name="Function_Pickup" parent="OculusFirstPerson/Right_Hand" index="2" instance=ExtResource( 5 )]
-collision_mask = 4
+collision_mask = 12
 pickup_range = 0.35
+impulse_factor = 1.5
 
 [node name="Follow" parent="OculusFirstPerson/Right_Hand" index="3" instance=ExtResource( 10 )]
 

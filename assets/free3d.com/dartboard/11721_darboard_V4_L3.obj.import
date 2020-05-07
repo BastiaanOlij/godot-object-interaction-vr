@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/11721_darboard_V4_L3.obj-409944ceee5e8ffc175698f64ff94e9a.mesh"
+
+[deps]
+
+files=[ "res://.import/11721_darboard_V4_L3.obj-409944ceee5e8ffc175698f64ff94e9a.mesh" ]
+
+source_file="res://assets/free3d.com/dartboard/11721_darboard_V4_L3.obj"
+dest_files=[ "res://.import/11721_darboard_V4_L3.obj-409944ceee5e8ffc175698f64ff94e9a.mesh", "res://.import/11721_darboard_V4_L3.obj-409944ceee5e8ffc175698f64ff94e9a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 0.01, 0.01, 0.01 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

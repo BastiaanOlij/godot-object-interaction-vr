@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Models/RoomParts/SplitWall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Models/RoomParts/Floor_2x2.tscn" type="PackedScene" id=2]
@@ -28,7 +28,9 @@
 [ext_resource path="res://Models/Kenney.nl/Mug.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Models/Kenney.nl/bookcase.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Models/Kenney.nl/books.tscn" type="PackedScene" id=28]
-
+[ext_resource path="res://Models/Objects/Dartboard.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Models/Kenney.nl/tableRound.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Models/Objects/Dart.tscn" type="PackedScene" id=31]
 
 [node name="Livingroom" type="Spatial"]
 script = ExtResource( 7 )
@@ -397,3 +399,24 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.869651, 0.0808542 )
 
 [node name="books2" parent="Misc/bookcaseClosedDoors" instance=ExtResource( 28 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0805395, 1.3362, 0.0808542 )
+
+[node name="Dartboard" parent="Misc" instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01374, 1.57372, -2.93756 )
+
+[node name="tableRound" parent="Misc" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.76641, -0.00363719, 0 )
+
+[node name="Dart01" parent="Misc" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82201, 0.749966, 0.155434 )
+
+[node name="Dart02" parent="Misc" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74958, 0.749966, 0.155434 )
+
+[node name="Dart03" parent="Misc" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.68659, 0.749966, 0.155434 )
+
+[node name="Dart04" parent="Misc" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.61962, 0.749966, 0.155434 )
+
+[node name="Dart05" parent="Misc" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.56019, 0.749966, 0.155434 )
