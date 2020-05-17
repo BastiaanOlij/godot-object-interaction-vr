@@ -13,6 +13,9 @@ collision_layer = 8
 collision_mask = 10
 continuous_cd = true
 script = ExtResource( 3 )
+center_pickup_on = NodePath("Pickup")
+highlight_mesh_instance = NodePath("MeshInstance")
+picked_up_layer = 1024
 
 [node name="CollisionShape" parent="." index="0"]
 shape = SubResource( 1 )
@@ -22,10 +25,11 @@ transform = Transform( 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 0
 mesh = ExtResource( 1 )
 material/0 = null
 
-[node name="Point" type="Spatial" parent="MeshInstance" index="0"]
+[node name="Point" type="Spatial" parent="." index="2"]
+transform = Transform( 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 0, 0, -0.097141 )
 
-[node name="Pickup" type="Spatial" parent="." index="2"]
+[node name="Pickup" type="Spatial" parent="." index="3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0346851 )
 
-[node name="Fins" type="Spatial" parent="." index="3"]
+[node name="Fins" type="Spatial" parent="." index="4"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0745544 )
