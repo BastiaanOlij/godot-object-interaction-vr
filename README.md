@@ -6,7 +6,8 @@ This repository contains the source code of the demo project used for the Object
 ![Screenshot](screenshot.png)
 
 You can find those here:
-- [Part one](not yet available)
+- [Part one](https://youtu.be/o6GIoO97vGQ)
+- [Part two](https://youtu.be/8yI05GVuQck)
 
 License
 -------
