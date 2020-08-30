@@ -4,15 +4,15 @@ export (NodePath) var pivot = null setget set_pivot
 var pivot_node = null
 var pivot_transform = Transform()
 
-export (NodePath) var follow = null setget set_follow
-var follow_node = null
-
 enum ROTATE_TYPE { ROTATE_X, ROTATE_Y, ROTATE_Z }
 export (ROTATE_TYPE) var rotate_type = ROTATE_TYPE.ROTATE_Y
 export var min_rotation = 0
 export var max_rotation = 120
 
 export (bool) var press_to_hold = true
+
+onready var min_rotrad = deg2rad(min_rotation)
+onready var max_rotrad = deg2rad(max_rotation)
 
 # Who picked us up?
 var picked_up_by = null
@@ -31,15 +31,6 @@ func set_pivot(new_pivot):
 			start_position = pivot_transform.xform_inv(global_transform.origin)
 	else:
 		pivot_node = null
-
-func set_follow(new_follow):
-	follow = new_follow
-	if follow:
-		follow_node = get_node(follow)
-		if follow_node and pivot_node:
-			pivot_node.get_node("Follow").global_transform = follow_node.global_transform
-	else:
-		follow_node = null
 
 # have we been picked up?
 func is_picked_up():
@@ -90,7 +81,6 @@ func _ready():
 	
 	# reset this now that we're ready
 	set_pivot(pivot)
-	set_follow(follow)
 
 func _process(_delta):
 	if pivot_node:
@@ -112,13 +102,13 @@ func _process(_delta):
 		v2 = v2.normalized()
 		
 		var angle = acos(v1.dot(v2))
-		if abs(angle) > 0.01:
-			var cross = v1.cross(v2).normalized()
+		var adj_angle = angle
+		var cross = v1.cross(v2).normalized()
+		if cross.y >= 0.0:
+			adj_angle = 2 * PI - angle
 			
-			print("Angle : " + str(rad2deg(angle)))
-			
-			pivot_node.transform.basis = rot.rotated(cross, angle)
+		print("Angle : " + str(rad2deg(adj_angle)))
 		
-			if follow_node:
-				follow_node.global_transform = pivot_node.get_node("Follow").global_transform
+		if adj_angle >= min_rotrad and adj_angle <= max_rotrad:
+			pivot_node.transform.basis = rot.rotated(cross, angle)
 
