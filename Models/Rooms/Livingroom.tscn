@@ -389,7 +389,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 0 )
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 5.59808, 1.02695, -2.46354 )
 
 [node name="Mug" parent="Misc" instance=ExtResource( 26 )]
-transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 5.59808, 0.928656, -2.39651 )
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 5.59808, 0.98489, -2.39651 )
 
 [node name="bookcaseClosedDoors" parent="Misc" instance=ExtResource( 27 )]
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 1.92457, 0, 2.67686 )

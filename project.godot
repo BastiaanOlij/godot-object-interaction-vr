@@ -19,6 +19,10 @@ config/name="Godot Object Interaction VR"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/fullscreen=true
+
 [gdnative]
 
 singletons=[ "res://addons/godot-oculus/godot_oculus.gdnlib" ]

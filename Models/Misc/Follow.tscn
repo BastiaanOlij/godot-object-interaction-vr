@@ -3,6 +3,7 @@
 [ext_resource path="res://Models/Misc/Follow.gd" type="Script" id=1]
 
 [sub_resource type="SphereShape" id=1]
+margin = 0.01
 radius = 0.02
 
 [sub_resource type="SphereMesh" id=2]
@@ -15,6 +16,7 @@ albedo_color = Color( 0.180392, 0.776471, 0.788235, 0.623529 )
 
 [node name="Follow" type="Spatial"]
 script = ExtResource( 1 )
+impulse_factor = 1.0
 
 [node name="Float" type="Node" parent="."]
 
@@ -25,6 +27,5 @@ collision_mask = 6
 shape = SubResource( 1 )
 
 [node name="Visualise" type="MeshInstance" parent="Float/FollowBody"]
-visible = false
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )

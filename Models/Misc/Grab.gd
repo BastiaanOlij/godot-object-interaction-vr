@@ -18,8 +18,8 @@ func is_picked_up():
 	return false
 	
 func _update_highlight():
-	pass
-	
+	$MeshInstance.visible = closest_count > 0
+
 func increase_is_closest():
 	closest_count += 1
 	_update_highlight()
@@ -60,12 +60,12 @@ func _ready():
 func _process(_delta):
 	var parent = get_parent()
 	if by_controller and parent is RigidBody:
-		var impulse_position = by_controller.global_transform.origin - pick_up_delta
-		var direction = impulse_position - global_transform.origin
+		var controller_position = by_controller.global_transform.origin - pick_up_delta
+		var direction = controller_position - global_transform.origin
 		
 		var strength = clamp(direction.length() * impulse_factor, 0.0, max_impulse)
 		
-		parent.apply_impulse(impulse_position, direction.normalized() * strength)
+		parent.apply_impulse(global_transform.origin - parent.global_transform.origin, direction.normalized() * strength)
 		
 		
 
